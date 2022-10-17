@@ -10,3 +10,8 @@ export default {
 export { default as VBarcode, vBarcodeProps } from "./VBarcode";
 
 export type { VBarcodeProps, BarcodeFormat } from "./VBarcode";
+// declare module 'vbarcode' {
+//   import type { DefineComponent } from 'vue'
+//   const component: DefineComponent<{}, {}, any>
+//   export default component
+// }
