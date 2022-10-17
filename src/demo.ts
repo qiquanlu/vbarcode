@@ -1,6 +1,6 @@
 import { createApp } from "vue";
-import App from "./App.vue";
-import plugin from "./plugin";
+import App from "./Demo.vue";
+import plugin from ".";
 
 const app = createApp(App);
 app.use(plugin);
