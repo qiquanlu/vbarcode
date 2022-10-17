@@ -24,7 +24,7 @@ export default defineConfig({
   plugins: [
     vue(),
     dts({
-      include: ["src/index.ts"],
+      // include: ["src/index.ts"],
     }),
   ],
 });
