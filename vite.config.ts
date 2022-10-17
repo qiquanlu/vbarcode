@@ -1,7 +1,25 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()]
-})
+  build: {
+    lib: {
+      entry: path.resolve(__dirname, "src/plugin/index.ts"),
+      name: "VBarcode",
+      fileName: (format) => `v-barcode.${format}.js`,
+    },
+    rollupOptions: {
+      external: ["vue"],
+      output: {
+        // Provide global variables to use in the UMD build
+        // Add external deps here
+        globals: {
+          vue: "Vue",
+        },
+      },
+    },
+  },
+  plugins: [vue()],
+});
