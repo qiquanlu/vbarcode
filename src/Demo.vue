@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
-
+import { VBarcode } from ".";
 const random = () => (Math.random() + 1).toString(36).substring(7);
 const value = ref(random());
 onMounted(() => {
