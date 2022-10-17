@@ -16,7 +16,7 @@
       "require": "./dist/v-barcode.umd.js"
     }
   },
-  "typings": "./dist/VBarcode.d.ts",
+  "typings": "./dist/index.d.ts",
   "keywords": [
     "vbarcode",
     "barcode",
