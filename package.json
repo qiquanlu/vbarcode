@@ -1,6 +1,6 @@
 {
   "name": "vbarcode",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "Qiquan Lu <kejeon@gmail.com> (https://github.com/qiquanlu)",
   "license": "MIT",
   "type": "module",
@@ -16,6 +16,7 @@
       "require": "./dist/v-barcode.umd.js"
     }
   },
+  "types": "./dist/index.d.ts",
   "keywords": [
     "vbarcode",
     "barcode",
