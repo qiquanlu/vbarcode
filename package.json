@@ -1,6 +1,6 @@
 {
   "name": "vbarcode",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Qiquan Lu <kejeon@gmail.com> (https://github.com/qiquanlu)",
   "license": "MIT",
   "type": "module",
@@ -34,7 +34,7 @@
     "vue": "^3.2.41"
   },
   "devDependencies": {
-    "@types/node": "^18.11.0",
+    "@types/node": "^18.8.0",
     "@vitejs/plugin-vue": "^3.1.2",
     "jsbarcode": "^3.11.5",
     "typescript": "^4.8.4",

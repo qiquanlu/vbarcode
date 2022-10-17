@@ -8,7 +8,7 @@ import path from "path";
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/plugin/index.ts"),
+      entry: path.resolve(__dirname, "src/plugin/VBarcode.ts"),
       name: "VBarcode",
       fileName: (format) => `v-barcode.${format}.js`,
     },
