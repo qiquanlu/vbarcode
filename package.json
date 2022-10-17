@@ -5,6 +5,17 @@
   "license": "MIT",
   "type": "module",
   "description": "Vue3 Wrapper for JsBarcode",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/v-barcode.umd.js",
+  "module": "./dist/v-barcode.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/v-barcode.es.js",
+      "require": "./dist/v-barcode.umd.js"
+    }
+  },
   "keywords": [
     "vbarcode",
     "barcode",
