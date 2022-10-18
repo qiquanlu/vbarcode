@@ -1,6 +1,6 @@
 {
   "name": "vbarcode",
-  "version": "0.0.12",
+  "version": "0.0.15",
   "author": "Qiquan Lu <kejeon@gmail.com> (https://github.com/qiquanlu)",
   "license": "MIT",
   "type": "module",
@@ -29,7 +29,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build ",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
   "dependencies": {
     "vue": "^3.2.41"
@@ -41,6 +44,7 @@
     "typescript": "^4.8.4",
     "vite": "^3.1.8",
     "vite-plugin-dts": "^1.6.6",
+    "vitepress": "1.0.0-alpha.21",
     "vue-tsc": "^0.40.13"
   }
 }

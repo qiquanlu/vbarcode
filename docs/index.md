@@ -1,17 +1,15 @@
 # VBarcode
-This is a JsBarcode vue 3 wrapper.
 
-View [JsBarcode](http://lindell.me/JsBarcode) to learn more.
+A vue3 wrapper for JsBarcode.
 
 ## Install
-
 ```bash
 pnpm i vbarcode
 ```
+## Examples
 
-## Example
-
-```javascript
+### CODE128 with default options
+```vue
 <script setup lang="ts">
 import { VBarcode } from "vbarcode";
 </script>
@@ -20,13 +18,32 @@ import { VBarcode } from "vbarcode";
 </template>
 
 ```
+- Output
+<v-barcode value="Apple" />
 
-Props:
+
+
+### CODE128 with different text
+```vue
+<script setup lang="ts">
+import { VBarcode } from "vbarcode";
+</script>
+<template>
+  <v-barcode value="Apple" />
+</template>
+
+```
+- Output
+<v-barcode value="Apple" text="Barcode value is Apple" />
+
+
+## Props
 ----
 For props, try to match [the wiki page from JsBarcode](https://github.com/lindell/JsBarcode/wiki/Options), if there is anything not matching please let me know.
 
-| Option | Default value | Type |
+| Prop | Default value | Type |
 |--------|---------------|------|
+| [`value`](#) | `undefined` | `String` (*required) |
 | [`format`](https://github.com/lindell/JsBarcode/wiki/Options#format) | `"auto" (CODE128)` | `String` |
 | [`width`](https://github.com/lindell/JsBarcode/wiki/Options#width) | `2` | `Number` |
 | [`height`](https://github.com/lindell/JsBarcode/wiki/Options#height) | `100` | `Number` |
